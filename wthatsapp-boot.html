@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Whatsapp</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col bg-success d-flex justify-content-center align-items-center " 
+                 style="height: 100vh;">
+                    
+                 <!--Right Side-->
+                    <div class="col-6  " style="height: 70%;max-width: 100%; ">
+                        <div class=" row ">
+                            <div class="row border border-dark" 
+                            style="font-size: 1.2em;background-color: rgb(36, 36, 36);color: white;height: 50px;">
+                                <div class="col-9" >
+                                    <div class=" p-2  "> 
+                                        <span>
+                                            ←
+                                        </span>
+                                        <span> 
+                                            <img src="abhi.jpg" alt="" class="rounded-circle"
+                                        style="height:30px;width: 35px;">
+                                        </span>
+                                        <span>
+                                            Abhishek Deshpande 
+                                        </span>
+        
+                                    </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                    <div style="display: flex;align-items: center;margin-top: 10%;justify-content:space-between">
+                                        <span style="flex: 1;">🎥</span>
+                                        <span style="flex: 1;">📞</span>
+                                        <span style="flex: 1;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                          </svg></span>
+    
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div style="display: flex;">
+
+                                            <div id="commentDiv" style="flex:4;height: 381px;overflow: auto;background-image: url(wa-def.jpg)">
+                                                <div id="placeCommentUser1" 
+                                                style="background-color: #075047;width: 100%;float:right;overflow: hidden;text-align: right;">
+    
+                                                </div>
+                                                <div id="placeCommentOtherUser2" style="background-color: yellow;width: 100%;text-align: left;">
+    
+                                                </div>
+        
+                                            </div>
+        
+                                        </div>
+    
+                                    </div>
+                                    <div style="display: flex;" >
+                                        <span style="flex: 2;">
+                                            <input id="msg" class="form-control mr-2 border" type="search" style="height: 90%;" placeholder="Type a message" aria-label="Search">
+                                        </span>
+                                        <span>
+                                            <button onclick="comment()" style="height: 100%;">Enter</button>
+                                        </span>
+
+                                    </div> 
+    
+
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Left Side-->
+                    <div class="col-6  " style="height: 70%;max-width: 100%; ">
+                        <div class=" row ">
+                            <div class="row border border-dark" 
+                            style="font-size: 1.2em;background-color: rgb(36, 36, 36);color: white;height: 50px;">
+                                <div class="col-9" >
+                                    <div class=" p-2  "> 
+                                        <span>
+                                            ←
+                                        </span>
+                                        <span> 
+                                            <img src="abhi.jpg" alt="" class="rounded-circle"
+                                        style="height:30px;width: 35px;">
+                                        </span>
+                                        <span>
+                                            Abhishek Deshpande
+                                        </span>
+        
+                                    </div>
+
+                                </div>
+                                <div class="col-3 ">
+                                    <div style="display: flex;align-items: center;margin-top: 10%;justify-content:space-between">
+                                        <span style="flex: 1;">🎥</span>
+                                        <span style="flex: 1;">📞</span>
+                                        <span style="flex: 1;"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots-vertical" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                          </svg></span>
+    
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div style="display: flex;">
+                                            <div id="commentDiv1"style="flex:4;height: 381px;overflow: auto;background-image: url(wa-def.jpg)">
+                                                <div id="placeCommentUser2" style="background-color: #075047;max-width: 100%;text-align: right;">
+    
+                                                </div>
+                                                <div id="placeCommentOther" style="background-color: yellow;max-width: 100%;text-align: left;">
+    
+                                                </div>
+        
+                                            </div>
+        
+                                        </div>
+    
+                                    </div>
+                                    <div style="display: flex;" >
+                                        <span style="flex:2">
+                                            <input id="msg1" class="form-control mr-2 border" type="search" style="height: 90%;" placeholder="Type a message" aria-label="Search">
+                                        </span>
+                                        <span>
+                                            <button onclick="comment1()"  style="height: 100%;">Enter</button>
+                                        </span>
+
+                                    </div> 
+    
+
+
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                                 </div>
+
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+<script src="whatapp-boot.js"></script>
+</body>
+</html>

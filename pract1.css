@@ -1,0 +1,78 @@
+
+body
+{
+
+    margin: 0px;
+    background-image: url(https://picsum.photos/seed/picsum/1400/1000);
+    height: 97vh;
+    max-width: 100%;
+
+   
+ 
+}
+.main
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 5px solid black;*/
+    height: 100%;
+ 
+}
+.log-form
+{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(197, 239, 247, 0.3);
+    border: 5px solid black;
+    height: 50%;
+    width: 30%;   
+}
+.heading
+{
+    flex:3;
+    /*border: 1px solid black;*/
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+.uname
+{
+    flex: 2;
+    /*border: 1px solid black;*/
+    margin-bottom: 15px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+.pass
+{
+    flex: 2;
+    /*border: 1px solid black;*/
+    margin-bottom: 15px;
+    text-align: center;
+    height: 30px;
+    width: 100%;
+}
+.btn
+{
+    flex: 2;
+    /*border: 1px solid black;*/
+    margin-bottom: 15px;
+    justify-content: center;
+    text-align: left;
+    height: auto;
+    width: 100%;
+}
+.checks
+{
+    flex: 2;
+   /* border: 1px solid black;*/
+   margin-bottom: 15px;
+    justify-content: center;
+    text-align: left;
+    height: auto;
+    width: auto;
+
+}
+

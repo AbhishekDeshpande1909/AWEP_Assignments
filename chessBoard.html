@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="chess.png" type="image/x-icon">
+    <title>Chess Board</title>
+    <style>
+        .black_dark
+        {
+            flex: 2;
+            background-color: #5c2f02;
+            color:black;
+            font-size:8.2vmin  ;
+             max-width: 100%;
+ 
+        }
+        .black_light
+        {
+            flex: 2;
+            background-color: rgb(228, 184, 104);
+            color:black;
+            font-size:8.2vmin  ;      
+             max-width: 100%;
+
+        }
+        .white_dark
+        {
+            flex: 2;
+            background-color: #5c2f02;
+            color: rgb(201, 116, 5);
+            font-size:8.2vmin  ;                 
+             max-width: 100%;
+
+        }
+        .white_light
+        {
+            flex: 2;
+            background-color: rgb(228, 184, 104);
+            color:rgb(201, 116, 5);
+            font-size:8.2vmin  ;
+            max-width: 100%;
+        }
+        .dark
+        {
+            flex: 2;
+            background-color: #5c2f02;
+            
+
+        }
+        .light
+        {
+            flex: 2;
+            background-color: rgb(228, 184, 104);
+            
+        }
+
+        .main
+        {
+            height: 75px;
+            display: flex;
+            text-align: center;
+            max-width: 100%;
+            
+        }
+        .container
+        {
+            max-height: 100%;
+            max-width:100%;
+
+        }
+        .a-h
+        {
+          display: flex;
+          height: 25px;
+          text-align: center;
+          max-width: 100%;
+          font-size: 18px;
+
+        }
+        .one-8
+        {
+            flex: 0.3;
+            margin-top: 30px;
+        }
+        body
+        {
+            background-color:black;
+            color:burlywood;
+        }
+      /*  .black_dark_knight
+        {
+
+        }
+        .black_dark:hover
+        {
+            background-color: pink;
+            color: black;
+        }
+             */
+    </style>    
+    <script src="chessBoard.js">
+
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+
+
+    <div class="a-h">
+        <div style="flex: 0.5"> 
+        </div>
+        <div style="flex: 2;"> a
+        </div>
+        <div style="flex :2;"> b
+        </div>
+        <div style="flex :2;"> c
+        </div>
+        <div style="flex :2;"> d
+        </div>
+        <div style="flex :2;"> e
+        </div>
+        <div style="flex :2;"> f
+        </div>
+        <div style="flex :2;"> g
+        </div>
+        <div style="flex :2;"> h
+        </div>
+        <div style="flex: 0.5"> 
+        </div>
+
+    </div>
+
+    <div class="main">
+            <div class="one-8">
+                 1
+
+            </div>
+            <div id="BH_dark" class="black_light">
+                <!--black hatti-->
+                <!-- unicode(dec): &#9820; -->
+                🐘
+
+            </div>
+    
+            <div class="black_dark" onmouseover="changecolor3a();changecolor3c();" onmouseout="changecolaway3a();changecolaway3c();">
+                <!--black knight-->
+                <!-- unicode(dec): &#9822; -->
+                🐎
+    
+            </div>
+            <div class="black_light">
+                <!--black oont-->
+                <!-- unicode(dec): &#9821; -->
+                🐫
+
+            </div>
+    
+            <div class="black_dark">
+                <!--black queen-->
+                <!-- unicode(dec): &#9819; -->
+                👰
+    
+            </div>           
+             <div class="black_light">
+                 <!--black king-->  
+                 <!-- unicode(dec): &#9818; -->              
+                 👑
+
+            </div>
+    
+            <div class="black_dark">
+                <!--black oont-->
+                <!-- unicode(dec): &#9821; -->
+                🐫
+    
+            </div>            
+            <div class="black_light" onmouseover="changecolor3h();changecolor3f();" onmouseout="changecolaway3h();changecolaway3f();">
+                <!--black knight-->
+                <!-- unicode(dec): &#9822; -->
+                🐎
+
+            </div>
+    
+            <div id="BH_light" class="black_dark">
+                <!--black hatti-->
+                <!-- unicode(dec): &#9820; -->
+                🐘
+    
+            </div>
+            <div class="one-8"> 1
+    
+            </div>
+    </div>
+    <div class="main">
+
+            <div class="one-8"> 2
+    
+            </div>
+            <div class="black_dark" onmouseover="changecolor3a();changecolor4a();" onmouseout="changecolaway3a();changecolaway4a();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                
+                💂
+    
+            </div>
+            <div class="black_light" onmouseover="changecolor3b();changecolor4b();" onmouseout="changecolaway3b();changecolaway4b();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+
+            </div>  
+            <div class="black_dark" onmouseover="changecolor3c();changecolor4c();" onmouseout="changecolaway3c();changecolaway4c();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+    
+            </div>            
+            <div class="black_light" onmouseover="changecolor3d();changecolor4d();" onmouseout="changecolaway3d();changecolaway4d();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+
+            </div>  
+            <div class="black_dark" onmouseover="changecolor3e();changecolor4e();" onmouseout="changecolaway3e();changecolaway4e();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+    
+            </div>           
+            <div class="black_light" onmouseover="changecolor3f();changecolor4f();" onmouseout="changecolaway3f();changecolaway4f();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+
+            </div>   
+            <div class="black_dark" onmouseover="changecolor3g();changecolor4g();" onmouseout="changecolaway3g();changecolaway4g();">
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+    
+            </div>
+            <div class="black_light" onmouseover="changecolor3h();changecolor4h();" onmouseout="changecolaway3h();changecolaway4h();"  >
+                <!--black pawn--> 
+                <!-- unicode(dec): &#9823; -->
+                💂
+            </div>
+            <div class="one-8">2
+    
+            </div>
+    </div>     
+    <div class="main">
+            <div class="one-8"> 3
+    
+            </div>
+            <div id="3a" class="light"> 
+            </div>
+    
+            <div id="3b" class="dark"> 
+    
+            </div>
+            <div id="3c" class="light"> 
+
+            </div>
+    
+            <div id="3d" class="dark"> 
+    
+            </div>            
+            <div id="3e" class="light"> 
+
+            </div>
+    
+            <div id="3f" class="dark"> 
+    
+            </div>            
+            <div id="3g" class="light"> 
+
+            </div>
+    
+            <div id="3h" class="dark"> 
+    
+            </div>
+            <div class="one-8">3
+    
+            </div>
+    </div>        
+    <div class="main">
+
+            <div class="one-8"> 4
+    
+            </div>
+            <div id="4a" class="dark"> 
+    
+            </div>
+            <div id="4b" class="light"> 
+
+            </div>
+            <div id="4c" class="dark">
+    
+            </div>      
+            <div id="4d" class="light">
+
+            </div>
+            
+            <div id="4e" class="dark">
+    
+            </div>
+            <div id="4f" class="light">
+
+            </div>
+    
+            <div id="4g" class="dark">
+    
+            </div>
+            <div id="4h" class="light">
+
+            </div>
+            <div class="one-8">4
+    
+            </div>
+    
+    </div>
+    <div class="main">
+            <div class="one-8"> 5
+    
+            </div>
+            <div id="5a" class="light">
+
+            </div>
+    
+            <div id="5b" class="dark">
+    
+            </div>
+            <div id="5c" class="light">
+
+            </div>
+    
+            <div id="5d" class="dark">
+
+            </div>           
+             <div id="5e" class="light">
+
+            </div>
+    
+            <div id="5f" class="dark">
+    
+            </div>           
+            <div id="5g" class="light">
+
+            </div>
+    
+            <div id="5h" class="dark">
+    
+            </div>
+            <div class="one-8"> 5
+    
+            </div>
+    </div>        
+    <div class="main">
+            <div class="one-8"> 6 
+    
+            </div>
+            <div id="6a" class="dark">
+    
+            </div>
+            <div id="6b" class="light">
+
+            </div>
+    
+            <div id="6c" class="dark">
+    
+            </div>
+            <div id="6d" class="light">
+
+            </div>
+    
+            <div id="6e" class="dark">
+    
+            </div>            
+            <div id="6f" class="light">
+
+            </div>
+    
+            <div id="6g" class="dark">
+    
+            </div>
+            <div id="6h" class="light">
+
+            </div>
+            <div class="one-8"> 6
+    
+            </div>
+    
+    </div>        
+    <div class="main">
+            <div class="one-8"> 7
+    
+            </div>
+            <div class="white_light" onmouseover="changecolor6a();changecolor5a();" onmouseout="changecolaway6a();changecolaway5a();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂
+            </div>
+    
+            <div class="white_dark" onmouseover="changecolor6b();changecolor5b();" onmouseout="changecolaway6b();changecolaway5b();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂   
+            </div>
+            <div class="white_light" onmouseover="changecolor6c();changecolor5c();" onmouseout="changecolaway6c();changecolaway5c();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂
+            </div>
+    
+            <div class="white_dark" onmouseover="changecolor6d();changecolor5d();" onmouseout="changecolaway6d();changecolaway5d();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂   
+            </div>           
+             <div class="white_light" onmouseover="changecolor6e();changecolor5e();" onmouseout="changecolaway6e();changecolaway5e();">
+                 <!--white pawn-->
+                 <!-- unicode(dec): &#9817; -->
+                💂
+            </div>
+    
+            <div class="white_dark" onmouseover="changecolor6f();changecolor5f();" onmouseout="changecolaway6f();changecolaway5f();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂   
+            </div>            
+            <div class="white_light" onmouseover="changecolor6g();changecolor5g();" onmouseout="changecolaway6g();changecolaway5g();">
+                <!--white pawn-->
+                <!-- unicode(dec): &#9817; -->
+                💂
+            </div>
+    
+            <div class="white_dark" onmouseover="changecolor6h();changecolor5h();" onmouseout="changecolaway6h();changecolaway5h();">
+                <!--white pawn--> 
+                <!-- unicode(dec): &#9817; -->              
+                💂   
+            </div>
+            <div class="one-8">7
+    
+            </div>
+    </div>        
+
+    <div class="main">
+
+            <div class="one-8"> 8
+    
+            </div>
+            <div class="white_dark">
+                <!--white hatti--> 
+                <!-- unicode(dec): &#9814; -->               
+                🐘   
+            </div>
+            <div class="white_light" onmouseover="changecolor6a();changecolor6c();" onmouseout="changecolaway6a();changecolaway6c();">
+                <!--white knight-->
+                <!-- unicode(dec): &#9816; -->               
+                🐎
+            </div>
+    
+            <div class="white_dark">
+                <!--white oont--> 
+                <!-- unicode(dec): &#9815; -->               
+                🐫    
+            </div>
+            <div class="white_light">
+                <!--white queen-->  
+                <!-- unicode(dec): &#9813; -->              
+                👰
+            </div>
+    
+            <div class="white_dark">
+                <!--white king--> 
+                <!-- unicode(dec):  &#9812; -->              
+                👑
+            </div>           
+             <div class="white_light">
+                 <!--white oont-->
+                 <!-- unicode(dec): &#9815; -->
+                
+                🐫
+            </div>
+    
+            <div id="8g" class="white_dark" onmouseover="changecolor6h();changecolor6f();image()" onmouseout="changecolaway6h();changecolaway6f();">
+                <!--white knight-->
+                <!-- unicode(dec): &#9816; -->
+                🐎     
+            </div>
+            <div class="white_light">
+                <!--white hatti-->
+                <!-- unicode(dec): &#9814; -->
+                🐘
+            </div>
+            <div class="one-8"> 8    
+            </div>
+    </div>
+    <div class="a-h">
+            <div style="flex: 0.5;"> 
+        
+            </div>
+            <div style="flex: 2;margin-top: 7px;"> a
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> b
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> c
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> d
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> e
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> f
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> g
+        
+            </div>
+            <div style="flex :2;margin-top: 7px;"> h
+        
+            </div>
+            <div style="flex: 0.5; "> 
+
+            </div>       
+    </div>
+</div>
+</body>
+</html>
