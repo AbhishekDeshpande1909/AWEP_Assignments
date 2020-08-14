@@ -1,414 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="chess.png" type="image/x-icon">
-    <title>Chess Board</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Title</title>
 </head>
-<body style="background-color:black;color:burlywood">
+<body>
+    <div class="container-fluid">
 
-    <div style="display: flex;
-          height: 30px;
-          text-align: center;">
-    <div style="flex: 0.5"> 
-
-    </div>
-    <div style="flex: 2;margin-top: 10px;"> a
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> b
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> c
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> d
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> e
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> f
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> g
-
-    </div>
-    <div style="flex :2;margin-top: 10px;"> h
-
-    </div>
-    <div style="flex: 0.5"> 
-
-    </div>
-
-   </div>
-
-        <div style="height: 75px;display: flex;text-align: center;justify-content: center;">
-            <div style="flex: 0.5;margin-top: 30px;"> 1
-
+        <div class="row">
+            <div class="col-3 bg-primary" style="max-width: 100%;overflow: auto;">
+               <table class="table table-bordered table-dark" style="margin: 10%;width: 50%;">
+                 <thead>
+                   <tr>
+                     <th scope="col">#</th>
+                     <th scope="col">First</th>
+                     <th scope="col">Last</th>
+                     <th scope="col">Handle</th>
+                   </tr>
+                 </thead>
+                 <tbody>
+                   <tr>
+                     <th scope="row">1</th>
+                     <td>Mark</td>
+                     <td>Otto</td>
+                     <td>@mdo</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">2</th>
+                     <td>Jacob</td>
+                     <td>Thornton</td>
+                     <td>@fat</td>
+                   </tr>
+                   <tr>
+                     <th scope="row">3</th>
+                     <td colspan="2">Larry the Bird</td>
+                     <td>@twitter</td>
+                   </tr>
+                 </tbody>
+               </table>
             </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-hatti-1.jpg" alt="" style="height:40px;width: 60px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-ghoda-1.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-oont-1.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-                
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-vazir.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-    
-            </div>           
-             <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-king.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-oont.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-    
-            </div>            
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-ghoda.jpg" alt="" style="height:55px;width: 80px;margin-top: 10px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-hatti.jpg" alt="" style="height:42px;width: 60px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 1
-    
-            </div>
-        </div>
-        <div style="height: 75px;display: flex;text-align: center;">
-
-            <div style="flex :0.5;margin-top: 30px;"> 2
-    
-            </div>
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
- 
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>            
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
- 
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>           
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="black-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="black-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">                
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 2
-    
-            </div>
-        </div>     
-        <div style="height: 75px;display: flex;text-align: center;">
-            <div style="flex :0.5;margin-top: 30px;"> 3
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>            
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>            
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 3
-    
-            </div>
-        </div>        
-        <div style="height: 75px;display: flex;text-align: center;">
-
-            <div style="flex :0.5;margin-top: 30px;"> 4
-    
-            </div>
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-
-
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>      
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
+            <div class="col-4 bg-success" >.col-sm-4</div>
+            <div class="col-5 bg-danger" >.col-sm-4</div>
             
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
+          </div>
+      
+      </div>
+      <label for="exampleColorInput" class="form-label">Color picker</label>
+      <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
 
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 4
-    
-            </div>
-    
-        </div>
-        <div style="height: 75px;display: flex;text-align: center;">
-            <div style="flex :0.5;margin-top: 30px;"> 5
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-
-            </div>           
-             <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>           
-         <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 5
-    
-            </div>
-        </div>        
-        <div style="height: 75px;display: flex;text-align: center;">
-            <div style="flex :0.5;margin-top: 30px;"> 6
-    
-            </div>
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>            
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 6
-    
-            </div>
-    
-        </div>        
-        <div style="height: 75px;display: flex;text-align: center;">
-            <div style="flex :0.5;margin-top: 30px;"> 7
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-pyada.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-pyada.jpg"  alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-pyada-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-pyada.jpg"  alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 7
-    
-            </div>
-        </div>        
-
-        <div style="height: 75px;display: flex;text-align: center;justify-content: center;">
-
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 8
-    
-            </div>
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-hatti.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-ghoda.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-oont-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-vazir.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-king.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>           
-             <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-oont.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-    
-            <div style="flex: 2;background-color: rgb(228, 184, 104);">
-                <img src="white-ghoda-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-    
-            </div>
-            <div style="flex: 2;background-color: #5c2f02;">
-                <img src="white-hatti-1.jpg" alt="" style="height:40px;width: 50px;margin-top: 20px;">
-
-            </div>
-            <div style="flex :0.5;text-align: center;margin-top: 30px;"> 8
-    
-            </div>
-        </div>
-
-
-        <div style="display: flex;
-        height: 30px;
-        text-align: center;">
-            <div style="flex: 0.5;margin-top: 10px;"> 
-        
-            </div>
-            <div style="flex: 2;margin-top: 10px;"> a
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> b
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> c
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> d
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> e
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> f
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> g
-        
-            </div>
-            <div style="flex :2;margin-top: 10px;"> h
-        
-            </div>
-            <div style="flex: 0.5;margin-top: 10px;"> 
-
-            </div>
-        
-           </div>
-
- 
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
 </body>
 </html>
